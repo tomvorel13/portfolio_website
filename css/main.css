@@ -1,0 +1,115 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pozadi4.jpeg');
+  background-size: cover;
+}
+.container {
+  height: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.items {
+    margin-top: 250px;
+    max-width: 980px;
+}
+
+h1 {
+  padding: 0;
+  font-family: 'Athiti', sans-serif;
+  color: #fff;
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 7px;
+  margin-bottom: 100px;
+  text-shadow: 2px 2px 6px #262626;
+}
+
+#dev {
+  display: inline-block;
+  border: 4px solid #6E8A71;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Athiti', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 4px #262626;
+  /*font-family: 'Open Sans', sans-serif;*/
+  margin-bottom: 18px;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px #262626;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.social {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 30px;
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px #262626;
+  transition: 0.5s ease;
+}
+
+.social a:hover {
+  color: #6E8A71;
+  font-size: 5rem;
+  transform: scale(1.2);
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2  {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .social {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .social a {
+    font-size: 2.7rem;
+  }
+
+  .items {
+    padding-top: 0;
+    margin-top: 100px;
+  }
+}
