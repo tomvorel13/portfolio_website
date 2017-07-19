@@ -1,22 +1,23 @@
+/*--------------------------------------------------------------------*/
+/*GLOBAL STYLES*/
+/*--------------------------------------------------------------------*/
 html, body {
   height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pozadi4.jpeg');
-  background-size: cover;
-}
-.container {
-  height: 100%;
-  max-width: 980px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
+body {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pozadi4.jpeg');
+  /*background-repeat: no-repeat;*/
+  background-position: center center;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------------*/
+/*MAIN PAGE*/
+/*--------------------------------------------------------------------*/
 .items {
-    margin-top: 250px;
-    max-width: 980px;
+    margin-top: 190px;
 }
 
 h1 {
@@ -31,14 +32,6 @@ h1 {
   text-shadow: 2px 2px 6px #262626;
 }
 
-#dev {
-  display: inline-block;
-  border: 4px solid #6E8A71;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
 h2 {
   font-family: 'Athiti', sans-serif;
   color: #fff;
@@ -49,7 +42,7 @@ h2 {
   font-weight: normal;
 }
 
-p {
+h3 {
   margin: 0;
   color: #fff;
   text-shadow: 1px 1px 4px #262626;
@@ -57,8 +50,16 @@ p {
   font-size: 3rem;
 }
 
+.dev {
+  display: inline-block;
+  border: 4px solid #6E8A71;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
 .social {
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,12 +81,113 @@ p {
   transform: scale(1.2);
 }
 
+/*--------------------------------------------------------------------*/
+/*BIO PAGE*/
+/*--------------------------------------------------------------------*/
+.main {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 30px 20px 30px 20px;
+}
+
+#profilePic {
+  height: 170px;
+  width: 130px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.about {
+  padding: 10px 0;
+}
+
+/*--------------------------------------------------------------------*/
+/*SKILLS PAGE*/
+/*--------------------------------------------------------------------*/
+.langIcon {
+  font-size: 500%;
+}
+
+.icon-html5 {
+  color: #F16528;
+}
+
+.icon-css3 {
+  color: #0070BB;
+}
+
+.icon-javascript {
+  color: #F7DF1E;
+}
+
+.icon-bootstrap {
+  color: #60408C;
+}
+
+.icon-jquery {
+  color: #78CFF5;
+}
+
+.icon-git {
+  color: #F84E28;
+}
+
+.icon-ubuntu {
+  color: #E95420;
+}
+
+.icon-nodejs {
+  color: #4A9B37;
+}
+
+.fa-windows {
+  padding: 20px;
+  color: #326CE5;
+}
+
+.icon-shell {
+  color: #080808;
+}
+
+i + h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+i + h3 + p {
+  color: #000;
+}
+
+/*--------------------------------------------------------------------*/
+/*CONTACT PAGE*/
+/*--------------------------------------------------------------------*/
+.main > h3 {
+  padding-bottom: 30px;
+}
+
+.contactIcons > i {
+  font-size: 200%;
+}
+
+.contactIcons:hover {
+  color: royalblue;
+}
 
 
 
+
+
+
+
+
+
+/*--------------------------------------------------------------------*/
 /*MEDIA QUERIES*/
+/*--------------------------------------------------------------------*/
 
-@media (max-width: 480px) {
+
+@media (max-width: 568px) {
   h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -95,8 +197,12 @@ p {
     font-size: 2.5rem;
   }
 
+  h3 {
+    font-size: 2rem;
+  }
+
   p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .social {
@@ -105,11 +211,25 @@ p {
   }
 
   .social a {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
 
   .items {
     padding-top: 0;
-    margin-top: 100px;
+    margin-top: 0px;
   }
+
+  /*BIO PAGE*/
+  .main {
+    margin-top: 20px;
+    padding-bottom: 28px;
+  }
+
+  /*CONTACT PAGE*/
+  .contactIcons {
+    font-size: 80%;
+  }
+
+
+
 }
