@@ -2,8 +2,15 @@ $(document).ready(function(){
   $('.items').animsition({
     inClass: 'fade-in-up',
     outClass: 'fade-out-down',
-    inDuration: 1500,
+    inDuration: 1200,
     loading: false,
-  })
+  });
+
+  $('.main').animsition({
+  inClass: 'fade-in-left',
+  outClass: 'fade-out-right',
+  inDuration: 1200,
+  loading: false,
+});
 
 });

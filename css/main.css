@@ -166,12 +166,15 @@ i + h3 + p {
   padding-bottom: 30px;
 }
 
-.contactIcons > i {
-  font-size: 200%;
+p > a {
+  font-size: 150%;
+  color: #262626
+  
 }
 
-.contactIcons:hover {
-  color: royalblue;
+p > a:hover {
+  color: #6E8A71;
+  text-decoration: none;
 }
 
 
