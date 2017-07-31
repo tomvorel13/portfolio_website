@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.items').animsition({
-    inClass: 'fade-in-up',
-    outClass: 'fade-out-down',
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-right',
     inDuration: 1200,
     loading: false,
   });
