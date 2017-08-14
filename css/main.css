@@ -1,30 +1,41 @@
 /*--------------------------------------------------------------------*/
+
+
 /*GLOBAL STYLES*/
+
+
 /*--------------------------------------------------------------------*/
-html, body {
+
+html,
+body {
   height: 100%;
 }
 
 body {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pozadi4.jpeg');
-  /*background-repeat: no-repeat;*/
   background-position: center center;
   background-size: cover;
 }
 
+
 /*--------------------------------------------------------------------*/
+
+
 /*MAIN PAGE*/
+
+
 /*--------------------------------------------------------------------*/
+
 .items {
-    margin-top: 190px;
+  margin-top: 60px;
 }
 
 h1 {
   padding: 0;
   font-family: 'Athiti', sans-serif;
   color: #fff;
-  font-size: 7rem;
+  font-size: 6.5rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 7px;
@@ -38,7 +49,7 @@ h2 {
   text-shadow: 1px 1px 4px #262626;
   /*font-family: 'Open Sans', sans-serif;*/
   margin-bottom: 18px;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: normal;
 }
 
@@ -47,7 +58,7 @@ h3 {
   color: #fff;
   text-shadow: 1px 1px 4px #262626;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .dev {
@@ -81,30 +92,41 @@ h3 {
   transform: scale(1.2);
 }
 
+
 /*--------------------------------------------------------------------*/
+
+
 /*BIO PAGE*/
+
+
 /*--------------------------------------------------------------------*/
+
 .main {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 30px 20px 30px 20px;
 }
 
 #profilePic {
   height: 170px;
   width: 130px;
-  border-radius: 50%;
-  padding-bottom: 10px;
+  border-radius: 10px;
 }
 
 .about {
-  padding: 10px 0;
+  padding: 20px 0 10px 0;
 }
 
+
 /*--------------------------------------------------------------------*/
+
+
 /*SKILLS PAGE*/
+
+
 /*--------------------------------------------------------------------*/
+
 .langIcon {
   font-size: 500%;
 }
@@ -154,25 +176,31 @@ h3 {
   color: #080808;
 }
 
-i + h3 {
+i+h3 {
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
 
-i + h3 + p {
+i+h3+p {
   color: #000;
 }
 
+
 /*--------------------------------------------------------------------*/
+
+
 /*CONTACT PAGE*/
+
+
 /*--------------------------------------------------------------------*/
-.main > h3 {
+
+.main>h3 {
   padding-bottom: 30px;
 }
 
 .contactLinks a {
   font-size: 150%;
-  color: #262626; 
+  color: #262626;
   text-decoration: none;
 }
 
@@ -187,61 +215,53 @@ i + h3 + p {
 }
 
 
-
-
-
-
-
-
-
 /*--------------------------------------------------------------------*/
+
+
 /*MEDIA QUERIES*/
-/*--------------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------------*/
 
 @media (max-width: 568px) {
+  #indexBody,
+  #contactBody {
+    background-size: 310%;
+  }
+  body {
+    background-size: auto;
+  }
   h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
   }
-
-  h2  {
+  h2 {
     font-size: 2.5rem;
   }
-
   h3 {
     font-size: 2rem;
   }
-
   p {
     font-size: 1rem;
   }
-
   .social {
     margin-top: 30px;
     flex-wrap: wrap;
   }
-
   .social a {
     font-size: 2rem;
   }
-
   .items {
     padding-top: 0;
     margin-top: 0px;
   }
-
   /*BIO PAGE*/
   .main {
     margin-top: 20px;
     padding-bottom: 28px;
   }
-
   /*CONTACT PAGE*/
   .contactIcons {
     font-size: 80%;
   }
-
-
-
 }
